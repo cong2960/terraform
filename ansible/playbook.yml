@@ -1,0 +1,10 @@
+---
+- hosts: iac
+  remote_user: "{{ user }}"
+  tasks:
+   - name: aaa
+     shell: wget https://test-ansible.oss-cn-hangzhou.aliyuncs.com/terraform-provider-api
+   - name: bbb
+     shell: chmod +x terraform-provider-api
+   - name: ccc
+     shell: nohup ./terraform-provider-api > log 2>&1 &
