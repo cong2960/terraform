@@ -1,12 +1,12 @@
 terraform {
   required_providers {
     ansible = {
-      source = "terraform.lilecong.io/lilecong/ansible"
-      version = "1.0.0"
+      source = "nbering/ansible"
+      version = "1.0.4"
     }
     alicloud = {
-      source = "terraform.lilecong.io/lilecong/alicloud"
-      version = "1.0.0"
+      source = "aliyun/alicloud"
+      version = "1.176"
    }
   }
 }
